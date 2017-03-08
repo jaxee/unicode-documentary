@@ -1,0 +1,14 @@
+{
+  "name": "unicode-documentary",
+  "version": "0.0.1",
+  "description": "A website exploring Unicode and the multilingual Internet for IMD4002 (Technology and Culture).",
+  "author": "Jackie Ellis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaxee/unicode-documentary"
+  },
+  "dependencies": {
+    "mime-types": "*"
+  },
+  "license": "ISC"
+}
