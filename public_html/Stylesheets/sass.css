@@ -1,4 +1,8 @@
 h1 {
-  color: #0049FF; }
+  color: #0049FF;
+  text-align: center; }
+
+h2, h3 {
+  text-align: center; }
 
 /*# sourceMappingURL=sass.css.map */

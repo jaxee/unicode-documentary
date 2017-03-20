@@ -7,8 +7,45 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="Images/favicon.ico" />
+	<script src="Script/jquery.scrollify.js"></script>
+
+	<script>
+		$(function() {
+			$.scrollify({
+				section : ".scrollT",
+				sectionName : "section-name"
+			});
+		});
+	</script>
+
 </head>
 <body>
-	<h1>Unicode - The Multilingual Internet</h1>
+	<section id="homePage" class="scrollT" data-section-name="home">
+		<h1>Unicode - The Multilingual Internet</h1>
+	</section>
+	<section id="uniWhat" class="scrollT" data-section-name="what">
+		<h2>What is Unicode?</h2>
+		<h3>Why?</h3>
+		<h3>Where is it used?</h3>
+	</section>
+	<section id="uniImportance" class="scrollT" data-section-name="importance">
+		<h2>Importance of Language</h2>
+		<h3>Writing Systems</h3>
+	</section>
+	<section id="uniTechnical" class="scrollT" data-section-name="technical">
+		<h2>Technical Considerations</h2>
+		<h3>UTF-8 / UTF-16</h3>
+	</section>
+	<section id="uniGlobalization" class="scrollT" data-section-name="globalization">
+		<h2>Professional Globalization</h2>
+		<h3>Localization</h3>
+		<h3>Internationalization</h3>
+	</section>
+	<section id="uniPreservation" class="scrollT" data-section-name="preservation">
+		<h2>Language Preservation</h2>
+	</section>
+	<section id="references" class="scrollT" data-section-name="references">
+		<h2>References</h2>
+	</section>
 </body>
 </html>

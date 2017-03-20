@@ -1,6 +1,5 @@
 /* 
-Name: Jackie Ellis
-Student Number: 100940821
+Name: Jackie
 */
 
 // modules
