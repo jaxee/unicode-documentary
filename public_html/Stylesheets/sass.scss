@@ -1,4 +1,10 @@
-//Testing the sassiness
+// Our Google fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Unica+One');
+
+$fira-sans: 'Fira Sans', sans-serif;
+$fira-sans-condensed: 'Fira Sans Condensed', sans-serif;
+$fira-mono: 'Fira Mono', monospace;
+$unica-one: 'Unica One', cursive;
 
 html, body {
 	width: 100%;
@@ -7,13 +13,16 @@ html, body {
 	height:100%;
 }
 
-h1 {
-	text-align:center;
-}
-
-h2, h3 {
+h1, h2, h3 {
+	font-family: $fira-sans-condensed;
 	text-align:center;
 	color:white;
+}
+
+p {
+	font-family: $fira-sans;
+	color:white;
+	text-align:center;
 }
 
 section {
@@ -24,19 +33,44 @@ section {
     border-width: 1px;
 }
 
-#homePage h1{
-	font-family:'homePage' !important;
-	font-size:80px;
-	z-index: 9998;
-	color:white;
-	position:absolute;
-	margin-left: auto auto;
-	left: 0;
-	right: 0;
-	top:160px;
+#homePage {
+
+	h1 {
+		font-family: $unica-one;
+		font-size:80px;
+		z-index: 9998;
+		color:white;
+		position:absolute;
+		margin-left: auto auto;
+		left: 0;
+		right: 0;
+		top:160px;
+	}
+
+	#transparentBG {
+		background-color: black;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding:0;
+		opacity: 0.4;
+		z-index:-1;
+	}
+
+	video#bgvid {
+		position: absolute; right: 0; bottom: 0;
+		min-width: 100%; min-height: 100%;
+		width: auto; height: auto; z-index: -100;
+		background: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
 }
 
 .subTitle {
+	font-family: $fira-mono;
 	font-size:40px;
 }
 
@@ -50,27 +84,6 @@ section {
   60% {
     transform: translateY(-10px);
   }
-}
-
-#homePage video#bgvid {
-	position: absolute; right: 0; bottom: 0;
-	min-width: 100%; min-height: 100%;
-	width: auto; height: auto; z-index: -100;
-	background: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
-
-#homePage #transparentBG {
-	background-color: black;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding:0;
-	opacity: 0.4;
-	z-index:-1;
 }
 
 #uniWhat{

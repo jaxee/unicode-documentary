@@ -1,15 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Unica+One");
 html, body {
   width: 100%;
   padding: 0px;
   margin: 0px;
   height: 100%; }
 
-h1 {
-  text-align: center; }
-
-h2, h3 {
+h1, h2, h3 {
+  font-family: "Fira Sans Condensed", sans-serif;
   text-align: center;
   color: white; }
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  text-align: center; }
 
 section {
   display: block;
@@ -19,7 +23,7 @@ section {
   border-width: 1px; }
 
 #homePage h1 {
-  font-family: 'homePage' !important;
+  font-family: "Unica One", cursive;
   font-size: 80px;
   z-index: 9998;
   color: white;
@@ -28,17 +32,14 @@ section {
   left: 0;
   right: 0;
   top: 160px; }
-
-.subTitle {
-  font-size: 40px; }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(-20px); }
-  60% {
-    transform: translateY(-10px); } }
+#homePage #transparentBG {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.4;
+  z-index: -1; }
 #homePage video#bgvid {
   position: absolute;
   right: 0;
@@ -54,15 +55,17 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover; }
 
-#homePage #transparentBG {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  opacity: 0.4;
-  z-index: -1; }
+.subTitle {
+  font-family: "Fira Mono", monospace;
+  font-size: 40px; }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-20px); }
+  60% {
+    transform: translateY(-10px); } }
 #uniWhat {
   background-color: purple; }
 
