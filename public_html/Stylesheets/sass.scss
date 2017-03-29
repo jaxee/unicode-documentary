@@ -88,6 +88,14 @@ section {
 
 #uniWhat{
 	background-color:purple;
+
+	iframe {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 100%;
+	    height: 500px
+	}
 }
 
 #uniImportance{
@@ -145,4 +153,80 @@ section {
 	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#1F1F1F));
 
 	display:none;
+}
+
+// Found at: https://codepen.io/alexanderomara/pen/eNdGPe
+
+.binaryAnim {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80px;
+  width: 640px;
+  visibility: hidden;
+}
+.binaryAnim > s {
+  visibility: visible;
+  display: block;
+  float: right;
+  height: 80%;
+  margin-top: 1.25%;
+  width: 10%;
+  margin-right: 2.5%;
+  background: #000;
+  -webkit-animation: anim-binary 0.5s infinite;
+          animation: anim-binary 0.5s infinite;
+}
+.binaryAnim > s + s {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+.binaryAnim > s + s + s {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.binaryAnim > s + s + s + s {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.binaryAnim > s + s + s + s + s {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.binaryAnim > s + s + s + s + s + s {
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+.binaryAnim > s + s + s + s + s + s + s {
+  -webkit-animation-duration: 32s;
+          animation-duration: 32s;
+}
+.binaryAnim > s + s + s + s + s + s + s + s {
+  -webkit-animation-duration: 64s;
+          animation-duration: 64s;
+}
+.binaryAnim > s:first-child {
+  margin-right: 1.25%;
+}
+@-webkit-keyframes anim-binary {
+  0%,
+  50% {
+    opacity: 0.25;
+  }
+  50.001%,
+  100% {
+    opacity: 0.625;
+  }
+}
+@keyframes anim-binary {
+  0%,
+  50% {
+    opacity: 0.25;
+  }
+  50.001%,
+  100% {
+    opacity: 0.625;
+  }
 }
