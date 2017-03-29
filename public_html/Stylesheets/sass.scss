@@ -6,6 +6,11 @@ $fira-sans-condensed: 'Fira Sans Condensed', sans-serif;
 $fira-mono: 'Fira Mono', monospace;
 $unica-one: 'Unica One', cursive;
 
+$dark-grey: #282828;
+$grey: #7A7A7A;
+$light-grey: #CCCCCC;
+$off-white: #F7F7F7;
+
 html, body {
 	width: 100%;
 	padding:0px;
@@ -14,15 +19,13 @@ html, body {
 }
 
 h1, h2, h3 {
-	font-family: $fira-sans-condensed;
-	text-align:center;
-	color:white;
+  font-family: $fira-sans-condensed !important;
+  color: $dark-grey !important;
 }
 
 p {
-	font-family: $fira-sans;
-	color:white;
-	text-align:center;
+  font-family: $fira-sans !important;
+  color: $dark-grey !important;
 }
 
 section {
@@ -36,16 +39,22 @@ section {
 #homePage {
 
 	h1 {
-		font-family: $unica-one;
+    text-align: center !important;
+		font-family: $unica-one !important;
 		font-size:80px;
 		z-index: 9998;
-		color:white;
+		color:white !important;
 		position:absolute;
 		margin-left: auto auto;
 		left: 0;
 		right: 0;
 		top:160px;
 	}
+
+  .subTitle {
+    font-family: $fira-mono !important;
+    font-size:40px;
+  }
 
 	#transparentBG {
 		background-color: black;
@@ -69,11 +78,6 @@ section {
 	}
 }
 
-.subTitle {
-	font-family: $fira-mono;
-	font-size:40px;
-}
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -86,16 +90,42 @@ section {
   }
 }
 
-#uniWhat{
-	background-color:purple;
+.no-gutter {
+  padding: 0px !important;
+}
 
-	iframe {
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    width: 100%;
-	    height: 500px
-	}
+.cite {
+  color: $grey !important;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#uniWhat{
+  background-color: $off-white;
+
+  h2 {
+    font-size: 80px;
+  }
+  
+  .uniContent {
+    height: 100%;
+  }
+
+  .sideImage {
+    background-image: url(../Images/uniWhat/typewriter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  iframe {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 500px
+  }
 }
 
 #uniImportance{
