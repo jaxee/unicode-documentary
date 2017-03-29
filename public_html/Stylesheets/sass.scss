@@ -21,11 +21,13 @@ html, body {
 h1, h2, h3 {
   font-family: $fira-sans-condensed !important;
   color: $dark-grey !important;
+  text-transform: uppercase !important;
 }
 
 p {
   font-family: $fira-sans !important;
   color: $dark-grey !important;
+  line-height: 1.8 !important;
 }
 
 section {
@@ -48,12 +50,13 @@ section {
 		margin-left: auto auto;
 		left: 0;
 		right: 0;
-		top:160px;
+		top:20px;
 	}
 
   .subTitle {
     font-family: $fira-mono !important;
     font-size:40px;
+    text-transform: none;
   }
 
 	#transparentBG {
@@ -100,15 +103,26 @@ section {
   text-transform: uppercase;
 }
 
+.indentText {
+  padding-left: 25px;
+  margin-top: -5px !important;
+  color: $grey !important;
+  line-height: 1.4 !important;
+}
+
 #uniWhat{
   background-color: $off-white;
 
   h2 {
     font-size: 80px;
   }
-  
-  .uniContent {
-    height: 100%;
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
+
+  p, h3 {
+    margin-top: 25px;
   }
 
   .sideImage {
@@ -116,7 +130,16 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 1000px;
+  }
+
+  .fullwidthImage {
+    background-image: url(../Images/uniWhat/chart1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 50px;
   }
 
   iframe {
