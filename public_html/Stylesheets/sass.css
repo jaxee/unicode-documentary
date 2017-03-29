@@ -5,7 +5,7 @@ html, body {
   margin: 0px;
   height: 100%; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Fira Sans Condensed", sans-serif !important;
   color: #282828 !important;
   text-transform: uppercase !important; }
@@ -89,8 +89,7 @@ section {
 .indentText {
   padding-left: 25px;
   margin-top: -5px !important;
-  color: #7A7A7A !important;
-  line-height: 1.4 !important; }
+  color: #7A7A7A !important; }
 
 #uniWhat {
   background-color: #F7F7F7; }
@@ -98,21 +97,25 @@ section {
     font-size: 80px; }
   #uniWhat .uniSideText {
     padding: 25px 50px; }
+  #uniWhat .uniContent {
+    height: 100%; }
   #uniWhat p, #uniWhat h3 {
     margin-top: 25px; }
+  #uniWhat h4 {
+    text-align: center;
+    margin-top: 50px; }
   #uniWhat .sideImage {
     background-image: url(../Images/uniWhat/typewriter.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1000px; }
+    height: 100%; }
   #uniWhat .fullwidthImage {
     background-image: url(../Images/uniWhat/chart1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
-    margin-top: 50px; }
+    height: 400px; }
   #uniWhat iframe {
     display: block;
     margin-left: auto;

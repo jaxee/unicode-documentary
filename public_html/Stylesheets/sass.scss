@@ -18,7 +18,7 @@ html, body {
 	height:100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: $fira-sans-condensed !important;
   color: $dark-grey !important;
   text-transform: uppercase !important;
@@ -113,7 +113,6 @@ section {
   padding-left: 25px;
   margin-top: -5px !important;
   color: $grey !important;
-  line-height: 1.4 !important;
 }
 
 #uniWhat{
@@ -127,8 +126,17 @@ section {
     padding: 25px 50px;
   }
 
+  .uniContent {
+    height: 100%;
+  }
+
   p, h3 {
     margin-top: 25px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 50px;
   }
 
   .sideImage {
@@ -136,7 +144,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 100%;
   }
 
   .fullwidthImage {
@@ -144,8 +152,7 @@ section {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
-    margin-top: 50px;
+    height: 400px;
   }
 
   iframe {
