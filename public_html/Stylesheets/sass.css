@@ -5,12 +5,11 @@ html, body {
   margin: 0px;
   height: 100%; }
 
-<<<<<<< HEAD
 h1, h2, h3 {
   font-family: "Fira Sans Condensed", sans-serif !important;
   color: #282828 !important;
   text-transform: uppercase !important; }
-=======
+
 div#preloader {
   position: fixed;
   left: 0;
@@ -21,7 +20,6 @@ div#preloader {
   overflow: visible;
   background: #333 url("http://files.mimoymima.com/images/loading.gif") no-repeat center center;
   z-index: 99999999; }
->>>>>>> 18ff6719aecd88a39f30cbea6de5f71ebe63b5b1
 
 p {
   font-family: "Fira Sans", sans-serif !important;
