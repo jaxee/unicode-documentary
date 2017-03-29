@@ -40,4 +40,4 @@ jspm_packages
 .DS_Store
 
 # Sass map file was causing issues
-.css.map
+Stylesheets/sass.css.map
