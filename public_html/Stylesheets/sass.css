@@ -5,9 +5,16 @@ html, body {
   margin: 0px;
   height: 100%; }
 
-h1, h2, h3 {
-  font-family: "Fira Sans Condensed", sans-serif !important;
-  color: #282828 !important; }
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url("http://files.mimoymima.com/images/loading.gif") no-repeat center center;
+  z-index: 99999999; }
 
 p {
   font-family: "Fira Sans", sans-serif !important;
@@ -108,6 +115,9 @@ section {
 
 .arrow {
   width: 70%; }
+
+.arrow:hover {
+  filter: opacity(40%); }
 
 .bounce {
   position: absolute;

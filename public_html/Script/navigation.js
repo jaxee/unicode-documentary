@@ -3,6 +3,10 @@ $( document ).ready(function() {
     
     $(".uniWhat").children('img').addClass("selected");
 
+    $(".arrow").click(function() {
+        $.scrollify.move("#what");
+    });
+
     $(".uniWhat").click(function() {
         $.scrollify.move("#what");
     });
