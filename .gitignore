@@ -38,3 +38,6 @@ jspm_packages
 
 # Mac garbage files
 .DS_Store
+
+# Sass map file was causing issues
+sass.css.map
