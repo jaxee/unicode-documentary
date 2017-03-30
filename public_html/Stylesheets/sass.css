@@ -137,7 +137,7 @@ section {
   #uniImportance .uniSideText {
     padding: 25px 50px; }
   #uniImportance .sideImage {
-    background-image: url(../Images/uniLanguages/book.jpg);
+    background-image: url(../Images/uniLanguages/book_l.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ section {
     background-repeat: no-repeat;
     height: 260px; }
   #uniTechnical .sideImage {
-    background-image: url(../Images/uniTechnical/computer.jpg);
+    background-image: url(../Images/uniTechnical/computer_l.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
