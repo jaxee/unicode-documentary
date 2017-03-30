@@ -44,8 +44,6 @@ $( document ).ready(function() {
                 var current = $.scrollify.current();
                 changeNav(current[0].id);
 
-                console.log(current[0].id);
-
                 if (current[0].id == "homePage") {
                         $('.navigation').fadeOut(300);
                         $('.navigation').css("display", "none");
