@@ -26,6 +26,11 @@ p {
   color: #282828 !important;
   line-height: 1.8 !important; }
 
+ul {
+  font-family: "Fira Sans", sans-serif !important;
+  color: #282828 !important;
+  line-height: 1.8 !important; }
+
 section {
   display: block;
   width: 100%;
@@ -124,7 +129,21 @@ section {
     height: 500px; }
 
 #uniImportance {
-  background-color: yellow; }
+  background-color: #F7F7F7; }
+  #uniImportance h2 {
+    font-size: 80px; }
+  #uniImportance p, #uniImportance h3 {
+    margin-top: 15px; }
+  #uniImportance .uniContent {
+    height: 100%; }
+  #uniImportance .uniSideText {
+    padding: 25px 50px; }
+  #uniImportance .sideImage {
+    background-image: url(../Images/uniLanguages/book.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
 
 #uniTechnical {
   background-color: pink; }

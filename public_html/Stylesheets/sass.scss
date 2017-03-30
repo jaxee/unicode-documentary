@@ -36,6 +36,12 @@ p {
   line-height: 1.8 !important;
 }
 
+ul {
+  font-family: $fira-sans !important;
+  color: $dark-grey !important;
+  line-height: 1.8 !important;
+}
+
 section {
     display: block;
     width:100%;
@@ -165,7 +171,31 @@ section {
 }
 
 #uniImportance{
-	background-color:yellow;
+  background-color: $off-white;
+
+  h2 {
+    font-size: 80px;
+  }
+
+  p, h3 {
+    margin-top: 15px;
+  }
+
+  .uniContent {
+    height: 100%;
+  }
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
+
+  .sideImage {
+    background-image: url(../Images/uniLanguages/book.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
 }
 
 #uniTechnical{
