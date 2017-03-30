@@ -91,6 +91,9 @@ section {
   font-size: 12px;
   text-transform: uppercase; }
 
+.cite:hover {
+  text-decoration: underline; }
+
 .indentText {
   padding-left: 25px;
   margin-top: -5px !important;
@@ -146,7 +149,38 @@ section {
     height: 100%; }
 
 #uniTechnical {
-  background-color: pink; }
+  background-color: #F7F7F7; }
+  #uniTechnical h2 {
+    font-size: 80px; }
+  #uniTechnical p, #uniTechnical h3 {
+    margin-top: 25px; }
+  #uniTechnical .uniContent {
+    height: 100%; }
+  #uniTechnical h4 {
+    margin-top: 25px; }
+  #uniTechnical .uniSideText {
+    padding: 25px 50px; }
+  #uniTechnical .indentText {
+    text-align: right;
+    margin-top: 7px !important; }
+  #uniTechnical .encodingExamples {
+    background-image: url(../Images/uniTechnical/encodingExamples.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 290px; }
+  #uniTechnical .codePoint {
+    background-image: url(../Images/uniTechnical/codepoint.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px; }
+  #uniTechnical .sideImage {
+    background-image: url(../Images/uniTechnical/computer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
 
 #uniGlobalization {
   background-color: green; }
@@ -154,8 +188,12 @@ section {
 #uniPreservation {
   background-color: brown; }
 
-#references {
-  background-color: red; }
+#uniReferences {
+  background-color: #F7F7F7; }
+  #uniReferences h2 {
+    font-size: 80px; }
+  #uniReferences .uniSideText {
+    padding: 25px 50px; }
 
 .arrow {
   width: 70%; }
@@ -197,6 +235,10 @@ section {
 .selected {
   filter: grayscale(0%) !important;
   width: 110% !important; }
+
+.binaryRep {
+  margin: 30px auto;
+  display: block; }
 
 .binaryAnim {
   top: 0;

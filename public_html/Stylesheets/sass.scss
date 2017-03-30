@@ -115,6 +115,10 @@ section {
   text-transform: uppercase;
 }
 
+.cite:hover {
+  text-decoration:underline;
+}
+
 .indentText {
   padding-left: 25px;
   margin-top: -5px !important;
@@ -199,7 +203,56 @@ section {
 }
 
 #uniTechnical{
-	background-color:pink;
+	background-color: $off-white;
+
+  h2 {
+    font-size: 80px;
+  }
+
+  p, h3 {
+    margin-top: 25px;
+  }
+
+  .uniContent {
+    height: 100%;
+  }
+
+  h4 {
+    margin-top:25px;
+  }
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
+
+  .indentText {
+    text-align:right;
+    margin-top:7px !important;
+  }
+
+  .encodingExamples {
+    background-image: url(../Images/uniTechnical/encodingExamples.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 290px;
+  }
+
+  .codePoint {
+    background-image: url(../Images/uniTechnical/codepoint.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 260px;
+  }
+
+  .sideImage {
+    background-image: url(../Images/uniTechnical/computer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
 }
 
 #uniGlobalization {
@@ -210,8 +263,16 @@ section {
 	background-color:brown;
 }
 
-#references{
-	background-color:red;
+#uniReferences{
+	background-color: $off-white;
+
+  h2 {
+    font-size: 80px;
+  }
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
 }
 
 .arrow {
@@ -266,6 +327,10 @@ section {
 
 // Found at: https://codepen.io/alexanderomara/pen/eNdGPe
 
+.binaryRep {
+  margin: 30px auto;
+  display:block; 
+}
 .binaryAnim {
   top: 0;
   bottom: 0;

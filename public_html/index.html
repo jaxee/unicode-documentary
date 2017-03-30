@@ -22,8 +22,9 @@
 	<link rel="icon" type="image/png" href="Images/favicon.ico" />
 	<script src="Script/jquery.scrollify.js"></script>
     <script src="Script/navigation.js"></script>
+    <script src="Script/references.js"></script>
 </head>
-<body>
+<body onunload="refresh()">
 	<div id="preloader"></div>
 	
 	<div class="navigation">
@@ -42,7 +43,7 @@
 		<div class="scrollDown"><div class="bounce"> <img src="Images/arrow.png" class="arrow" /></div></div>
 		<div id="transparentBG"></div>
 		<video playsinline autoplay muted loop id="bgvid">
-		    <!--<source src="Videos/splash.webm" type="video/webm">-->
+		    <!--<source src="Videos/UnicodeLoop.mp4" type="video/webm">-->
 		    <source src="Videos/UnicodeLoop.mp4" type="video/mp4">
 		</video>
 	</section>
@@ -84,9 +85,9 @@
 
 				<div class="row">
 					<div class="col-md-10 offset-md-2">
-						<p>A writing system is the interpretation of verbal communication in the form of different symbols (Coulmas 1989). Humans use many forms of communication but writing can store information and share it with others.</p>
+						<p>A writing system is the interpretation of verbal communication in the form of different symbols. Humans use many forms of communication but writing can store information and share it with others. <span class="cite">[Coulmas, 1989]</span></p>
 
-						<p>Writing systems can be placed in three very broad categories; alphabets, syllabaries, or logographics (Taylor, Olson 1995). Logographic systems are symbols that represent a word or phrase (Tzeng, Wang 1983). Syllabaries are systems where written symbols represent syllables (Tzeng, Wang 1983). Alphabet systems mean letters in the script correspond to a consonant or vowel segment in the spoken language (Tzeng, Wang 1983).</p>
+						<p>Writing systems can be placed in three very broad categories; alphabets, syllabaries, or logographics <span class="cite">[Taylor & Olson, 1995]</span>. Logographic systems are symbols that represent a word or phrase <span class="cite">[Tzeng & Wang, 1983]</span>. Syllabaries are systems where written symbols represent syllables <span class="cite">[Tzeng & Wang, 1983]</span>. Alphabet systems mean letters in the script correspond to a consonant or vowel segment in the spoken language <span class="cite">[Tzeng & Wang, 1983]</span>.</p>
 						<p>Unicode is an effort to try to represent all reasonable writing systems on the planet:</p>
 
 						<ul>
@@ -101,17 +102,58 @@
 		</div>
 	</section>
 	<section id="uniTechnical" class="scrollT" data-section-name="technical">
-		<h2>Technical Considerations</h2>
-		<h3>UTF-8 / UTF-16</h3>
-		<div class="binaryAnim">
-		  <s></s>
-		  <s></s>
-		  <s></s>
-		  <s></s>
-		  <s></s>
-		  <s></s>
-		  <s></s>
-		  <s></s>
+		<div class="row uniContent">
+			<div class="col-md-6 uniSideText">
+				<h2>Technical Considerations</h2>
+				<div class="binaryRep">
+					<div class="binaryAnim">
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					  <s></s>
+					</div>
+					<p class="indentText"> Binary counting </p>
+				</div>
+
+				<h3>Unicode Transformation Format</h3>
+				
+				<p>Unicode transformation format (UTF) is an algorithmic mapping from every Unicode code point (except surrogate code points) to a unique byte sequence. There are several possible representations of Unicode data, including UTF-8, UTF-16 and UTF-32. The most popular ones, however are UTF-8 and UTF-16</p>
+
+				<p>What are the main differences?</p>
+				<ul>
+					<li>UTF-8 uses a minimum of one byte (8-bits) to encode characters</li>
+					<li>It is backward-compatible with ASCII</li>
+					<li>UTF-16 uses a minimum of two bytes/16 bits</li>
+					<li>It is incompatible with ASCII</li>
+				</ul>
+
+				<div class="encodingExamples no-gutter">
+					<h4>UTF-16, UTF-8, and UCS-2 Encoding Examples</h4>
+				</div>
+				
+				<h3>UTF-8</h3>
+				<p>The main goal of UTF-8 is to encode Unicode characters in one byte. </p>
+				<p>At a high level, code points 0 to 7 are stored as regular, single byte ASCII.  Code points 80 and above are converted to binary and stored in a series of bytes. The first “count” byte indicates the number of bytes for the code point, including the count byte.</p>
+				<p>Bytes starting with 10 are data bytes and contain information on the code point. There are no null bytes and characters outside of 0-127 start with a 1 to show that they are not ASCII. </p>
+
+				<div class="codePoint no-gutter">
+					<h4>Code Point to UTF-8</h4>
+				</div>
+
+				<h3>Comparing ASCII to Unicode</h3>
+				<p>The trouble with ASCII only using 7-bits (other than only representing English characters) meant people decided to use the 1-bit of extra space in whatever way they pleased. This lead to so many different codes being developed for different countries.</p>
+				<p>An example of different codes would be the computer. A letter on one computer could be a completely different letter on another computer. On some PC they could have the letter é, but on other computers sold in Israel it would be the Hebrew letter Gimel. </p>
+				<p>So, if someone from America send their résumés to Israel they would arrive as rsums <span class="cite">[Nelson & Gailly, 1996]</span>.</p> 
+				<p>The result of viewing text in one encoding using the display system of another encoding is called mojibake, a Japanese term meaning “character-mutation” <span class="cite">[Crippen, 2010, p6]</span>. Mojibake can be compared to words and phrases that are “lost in translation” in verbal language.</p>
+
+			</div>
+			<div class="col-md-6 uniContent no-gutter">
+				<div class="sideImage"></div>
+			</div>
 		</div>
 	</section>
 	<section id="uniGlobalization" class="scrollT" data-section-name="globalization">
@@ -123,7 +165,23 @@
 		<h2>Language Preservation</h2>
 	</section>
 	<section id="uniReferences" class="scrollT" data-section-name="references">
-		<h2>References</h2>
+		<div class="uniSideText">
+			<h2>References</h2>
+
+			<ul>
+				<li>BigeLow, C., & Holmes, K. (1993). The design of a Unicode font. Electronic Publishing. 3rd ed., Vol. 6, 289-305 </li>
+				<li>Pournader, R. (2002). Catching up to Unicode (1st ed., Vol. 23, 80-85). TUGboat</li>
+				<li>John, N. (2013). The Construction of the Multilingual Internet: Unicode, Hebrew, and Globalization. Journal Of Computer-Mediated Communication, 18(3), 321-338. doi: 10.1111/jcc4.12015</li>
+				<li>Gross, S. (2006). Internationalization and localization of software (Doctoral dissertation, Eastern Michigan University). Available at: https://pdfs.semanticscholar.org/bfee/27a83f63ba52a3977522bf64988b0a4b2938.pdf</li>
+				<li>Coulmas, F. (1989). The writing systems of the world. B. Blackwell.</li>
+				<li>Taylor, I., & Olson, D. R. (1995). Scripts and literacy: Reading and learning to read alphabets, syllabaries, and characters (Vol. 7). Springer Science & Business Media</li>
+				<li>Tzeng, O. J., & Wang, W. S. Y. (1983). The first two R's: The way different languages reduce speech to script affects how visual information is processed in the brain. American Scientist, 71(3), 238-243</li>
+				<li>Nelson, M., & Gailly, J. L. (1996). The data compression book (Vol. 2). New York: M&t Books</li>
+				<li>Crippen, J. (2010). Bits, bytes, and unicode: An introduction to digital text for linguist s</li>
+				<li>Tull, L. (2002). Library systems and Unicode: a review of the current state of development. Information technology and libraries, 21(4), 181.</li>
+				<li>King, R. S. (2012). Will unicode soon be the universal code? [The Data]. IEEE Spectrum. 49(7), 60-60. doi: 10.1109/MSPEC.2012.6221090</li>
+			</ul>
+		</div>
 	</section>
 </body>
 </html>
