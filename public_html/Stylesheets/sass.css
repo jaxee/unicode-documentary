@@ -89,7 +89,8 @@ section {
 .cite {
   color: #7A7A7A !important;
   font-size: 12px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .cite:hover {
   text-decoration: underline; }
@@ -124,12 +125,6 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 400px; }
-  #uniWhat iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 500px; }
 
 #uniImportance {
   background-color: #F7F7F7; }
@@ -183,10 +178,82 @@ section {
     height: 100%; }
 
 #uniGlobalization {
-  background-color: green; }
+  background-color: #F7F7F7; }
+  #uniGlobalization h2 {
+    font-size: 80px; }
+  #uniGlobalization .uniSideText {
+    padding: 25px 50px; }
+  #uniGlobalization .uniContent {
+    height: 100%; }
+  #uniGlobalization .indentText {
+    text-align: center;
+    padding: 0px; }
+  #uniGlobalization p, #uniGlobalization h3 {
+    margin-top: 25px; }
+  #uniGlobalization h4 {
+    text-align: center;
+    margin-top: 50px; }
+  #uniGlobalization .sideImage {
+    background-image: url(../Images/uniGlobal/professionals.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
+  #uniGlobalization .translit {
+    background-image: url(../Images/uniGlobal/translit.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 200px; }
+  #uniGlobalization .dates {
+    background-image: url(../Images/uniGlobal/dates.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 200px; }
+  #uniGlobalization .direction1 {
+    background-image: url(../Images/uniGlobal/direction1.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px; }
+  #uniGlobalization .direction2 {
+    background-image: url(../Images/uniGlobal/direction2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px; }
+  #uniGlobalization .direction3 {
+    background-image: url(../Images/uniGlobal/direction3.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px; }
 
 #uniPreservation {
-  background-color: brown; }
+  background-color: #F7F7F7; }
+  #uniPreservation h2 {
+    font-size: 80px; }
+  #uniPreservation .uniSideText {
+    padding: 25px 50px; }
+  #uniPreservation .uniContent {
+    height: 100%; }
+  #uniPreservation p, #uniPreservation h3 {
+    margin-top: 25px; }
+  #uniPreservation h4 {
+    text-align: center;
+    margin-top: 50px; }
+  #uniPreservation .sideImage {
+    background-image: url(../Images/uniPreserve/preserve.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
 
 #uniReferences {
   background-color: #F7F7F7; }

@@ -113,6 +113,7 @@ section {
   color: $grey !important;
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .cite:hover {
@@ -163,14 +164,6 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
-  }
-
-  iframe {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 500px
   }
 }
 
@@ -256,11 +249,119 @@ section {
 }
 
 #uniGlobalization {
-	background-color:green;
+	background-color:$off-white;
+  
+  h2 {
+    font-size: 80px;
+  }
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
+
+  .uniContent {
+    height: 100%;
+  }
+
+  .indentText {
+    text-align: center;
+    padding: 0px;
+  }
+
+  p, h3 {
+    margin-top: 25px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .sideImage {
+    background-image: url(../Images/uniGlobal/professionals.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .translit {
+    background-image: url(../Images/uniGlobal/translit.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 200px;
+  }
+
+  .dates {
+    background-image: url(../Images/uniGlobal/dates.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 200px;
+  }
+
+  .direction1 {
+    background-image: url(../Images/uniGlobal/direction1.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px;
+  }  
+
+  .direction2 {
+    background-image: url(../Images/uniGlobal/direction2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px;
+  } 
+
+  .direction3 {
+    background-image: url(../Images/uniGlobal/direction3.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 15px 0px;
+    height: 150px;
+  }     
 }
 
 #uniPreservation {
-	background-color:brown;
+	background-color:$off-white;
+
+  h2 {
+    font-size: 80px;
+  }
+
+  .uniSideText {
+    padding: 25px 50px;
+  }
+
+  .uniContent {
+    height: 100%;
+  }
+
+  p, h3 {
+    margin-top: 25px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .sideImage {
+    background-image: url(../Images/uniPreserve/preserve.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
 }
 
 #uniReferences{
