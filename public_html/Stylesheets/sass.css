@@ -114,7 +114,7 @@ section {
     text-align: center;
     margin-top: 50px; }
   #uniWhat .sideImage {
-    background-image: url(../Images/uniWhat/typewriter.jpg);
+    background-image: url(../Images/uniWhat/typewriter_optimized.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ section {
   #uniImportance .uniSideText {
     padding: 25px 50px; }
   #uniImportance .sideImage {
-    background-image: url(../Images/uniLanguages/book_l.jpg);
+    background-image: url(../Images/uniLanguages/book_optimized.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@ section {
     text-align: center;
     margin-top: 50px; }
   #uniGlobalization .sideImage {
-    background-image: url(../Images/uniGlobal/professionals.jpg);
+    background-image: url(../Images/uniGlobal/professionals_optimized.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
