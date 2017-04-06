@@ -418,7 +418,7 @@ section {
 	position:fixed;
 	z-index:9999;
 	right:40px;
-  top:33%;
+ 	top:33%;
 
 	font-family:nav;
 	font-size:17px;
@@ -440,6 +440,42 @@ section {
 .selected {
   filter: grayscale(0%) !important;
   width:110% !important;
+}
+
+.credit {
+	color:white !important;
+	position:absolute;
+	z-index:9997;
+	bottom:5%;
+	right:20px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-indicators .active{
+	background-color:#ef4027 !important;
+}
+
+.carousel-indicators li {
+	border: 1px solid #ef4027 !important;
+}
+
+.carousel-control.right {
+	background-image: none !important;
+}
+
+.carousel-control.left {
+	background-image: none !important;
+}
+
+.carousel-control {
+	color:black !important;
+}
+
+.carousel-indicators {
+	bottom: -35px !important;
 }
 
 // Found at: https://codepen.io/alexanderomara/pen/eNdGPe

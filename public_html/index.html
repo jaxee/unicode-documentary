@@ -50,6 +50,7 @@
 		</h1>
 		<div class="scrollDown"><div class="bounce"> <img src="Images/arrow.png" class="arrow" /></div></div>
 		<div id="transparentBG"></div>
+		<p class="credit"> Jackie Ellis, Josh Chartrand, Jasmine Chan</p>
 		<video playsinline autoplay muted loop id="bgvid">
 		    <!--<source src="Videos/UnicodeLoop.mp4" type="video/webm">-->
 		    <source src="Videos/UnicodeLoop.mp4" type="video/mp4">
@@ -64,6 +65,49 @@
 				<p>Unicode provides a unique number for every character, no matter what the platform, no matter what the program, no matter what the language</p>
 				<p>Unicode is the successor to the American Standard Code for Information Interchange (ASCII) which could only display Latin alphabet characters.</p>
 				<p class="indentText">Compared to ASCII which could only display Latin alphabet characters, Unicode can store 65,536 different characters, the first 127 characters are the same as ASCII.</p>
+
+				<h3> Fun Fact! </h3>
+				<p> ASCII art has become a graphic design technique. One of the main reasons ASCII art was created was because early printers lacked graphics ability and thus characters were used in place of graphic marks. </p>
+
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="Images/carousel/01.png"/>
+				    </div>
+
+				    <div class="item">
+				      <img src="Images/carousel/02.png"/>
+				    </div>
+
+				    <div class="item">
+				      <img src="Images/carousel/03.png"/>
+				    </div>
+
+				    <div class="item">
+				      <img src="Images/carousel/04.png"/>
+				    </div>
+				  </div>
+
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
 				<h3>Why?</h3>
 				<p>The main goal and interest was to develop an international text-encoder and application that can be used in all different countries and platforms. It solves the main problems that many current programs and encoders have: the fact that they are problems with recognizing the font and the use of multiple and inconsistent characters’ codes in many other languages other than English <span class="cite">[BigeLow & Holmes, 1993, pg 289]</span></p>
 				<h4>Unicode Consortium Twitter Feed</h4>
@@ -91,8 +135,11 @@
 			</div>
 			<div class="col-md-6 uniSideText">
 				<h2>Importance of Language</h2>
-				<h3>Writing Systems</h3>
 
+				<h4>Translate this website:</h4>
+				<div id="google_translate_element"></div>
+
+				<h3>Writing Systems</h3>
 				<div class="row">
 					<div class="col-md-10 offset-md-2">
 						<p>A writing system is the interpretation of verbal communication in the form of different symbols. Humans use many forms of communication but writing can store information and share it with others. <span class="cite">[Coulmas, 1989]</span></p>
@@ -108,8 +155,6 @@
 						</ul>
 					</div>
 				</div>
-				<h4>Translate the website using this widget:</h4>
-				<div id="google_translate_element"></div>
 			</div>
 		</div>
 	</section>
@@ -164,6 +209,7 @@
 				<video playsinline autoplay muted loop id="sidevid">
 				    <source src="Videos/asciiArt.mp4" type="video/mp4">
 				</video>
+				<p class="indentText"> ASCII Art & Unicode in Monodraw</p>
 			</div>
 			<div class="col-md-6 uniContent no-gutter">
 				<div class="sideImage"></div>
@@ -242,5 +288,6 @@
 			</ul>
 		</div>
 	</section>
+
 </body>
 </html>
