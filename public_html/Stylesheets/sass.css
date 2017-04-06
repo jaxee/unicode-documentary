@@ -125,6 +125,10 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     height: 400px; }
+  #uniWhat .twitter-timeline {
+    position: relative;
+    height: 500px;
+    display: block; }
 
 #uniImportance {
   background-color: #F7F7F7; }
