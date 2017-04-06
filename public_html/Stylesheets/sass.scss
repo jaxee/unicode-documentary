@@ -557,3 +557,28 @@ section {
     opacity: 0.625;
   }
 }
+
+#screenWarning {
+	display:none;
+	background-color:$off-white;
+	color:black;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+
+.pageContent {
+	display:block;
+}
+
+
+@media screen and (max-width: 700px) {
+    #screenWarning {
+    	position:fixed;
+    	display:block;
+    }
+
+    .pageContent {
+    	display:none;
+    }
+}

@@ -34,260 +34,269 @@
 </head>
 <body onunload="refresh()">
 	<div id="preloader"></div>
-	
-	<div class="navigation">
-		<div class="uniWhat"><img src="Images/navigation/what.png" /></div>
-		<div class="uniImportance"><img src="Images/navigation/Importance.png" /></div>
-		<div class="uniTechnical"><img src="Images/navigation/Technical.png" /></div>
-		<div class="uniGlobalization"><img src="Images/navigation/Globalization.png" /></div>
-		<div class="uniPreservation"><img src="Images/navigation/Language.png" /></div>
-		<div class="uniReferences"><img src="Images/navigation/Reference.png" /></div>
+
+	<div id="screenWarning">
+		<h1>This website is meant to be experienced on a computer and a full sized browser.</h1>
+		<h2>If you are seeing this message, do one of the following:</h2>
+		<p>If you are on a mobile device or tablet, switch to a desktop</p> 
+		<p>If your browser is zoomed in, zoom out to 100%</p>
 	</div>
 
-	<section id="homePage" class="scrollT" data-section-name="home">
-		<h1>Unicode
-		<div class="subTitle">The Multilingual Internet</div>
-		</h1>
-		<div class="scrollDown"><div class="bounce"> <img src="Images/arrow.png" class="arrow" /></div></div>
-		<div id="transparentBG"></div>
-		<p class="credit"> Jackie Ellis, Josh Chartrand, Jasmine Chan</p>
-		<video playsinline autoplay muted loop id="bgvid">
-		    <!--<source src="Videos/UnicodeLoop.mp4" type="video/webm">-->
-		    <source src="Videos/UnicodeLoop.mp4" type="video/mp4">
-		</video>
-	</section>
-
-	<section id="uniWhat" class="scrollT container-fluid" data-section-name="what">
-		<div class="row uniContent">
-			<div class="col-md-6 uniSideText">
-				<h2>What is Unicode?</h2>
-				<p>Unicode is a well know character encoding standard developed by a group of companies and institutions called the <b>Unicode Consortium</b>, which consists of many big named companies like MathML, Adobe Systems Incorporated and Microsoft Corporation <span class="cite">[Pournader, 2002, pg 80]</span></p> 
-				<p>Unicode provides a unique number for every character, no matter what the platform, no matter what the program, no matter what the language</p>
-				<p>Unicode is the successor to the American Standard Code for Information Interchange (ASCII) which could only display Latin alphabet characters.</p>
-				<p class="indentText">Compared to ASCII which could only display Latin alphabet characters, Unicode can store 65,536 different characters, the first 127 characters are the same as ASCII.</p>
-
-				<h3> Fun Fact! </h3>
-				<p> ASCII art has become a graphic design technique. One of the main reasons ASCII art was created was because early printers lacked graphics ability and thus characters were used in place of graphic marks. </p>
-
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				    <li data-target="#myCarousel" data-slide-to="3"></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				      <img src="Images/carousel/01.png"/>
-				    </div>
-
-				    <div class="item">
-				      <img src="Images/carousel/02.png"/>
-				    </div>
-
-				    <div class="item">
-				      <img src="Images/carousel/03.png"/>
-				    </div>
-
-				    <div class="item">
-				      <img src="Images/carousel/04.png"/>
-				    </div>
-				  </div>
-
-				  <!-- Left and right controls -->
-				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				  </a>
-				</div>
-
-				<h3>Why?</h3>
-				<p>The main goal and interest was to develop an international text-encoder and application that can be used in all different countries and platforms. It solves the main problems that many current programs and encoders have: the fact that they are problems with recognizing the font and the use of multiple and inconsistent characters’ codes in many other languages other than English <span class="cite">[BigeLow & Holmes, 1993, pg 289]</span></p>
-				<h4>Unicode Consortium Twitter Feed</h4>
-				<a class="twitter-timeline" data-height="500px" href="https://twitter.com/unicode">Tweets by unicode</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				<h3>Where is it used?</h3>
-				<p>The Unicode Standard has been adopted by such industry leaders as Apple, HP, IBM, JustSystems, Microsoft, Oracle, SAP, Sun, Sybase, Unisys and many others</p>
-				<p>It has been gaining momentum in recent years, especially in the software and computer industry <span class="cite">[Tull, 2002]</span></p>
-				<p>It is supported in many operating systems, all modern browsers, and many other products</p>
-				<p>According to Google, it was reported that only 50% of all web pages were encoded in Unicode in January 2010. Today, over 70% of the most popular websites uses Unicode <span class="cite">[John, 2013, pg 334]</span></p>
-				<div class="fullwidthImage no-gutter">
-					<h4>Adaptation of Unicode from 2001 to 2012</h4>
-				</div>
-			</div>
-			<div class="col-md-6 uniContent no-gutter">
-				<div class="sideImage"></div>
-			</div>
+    <span class="pageContent">
+		<div class="navigation">
+			<div class="uniWhat"><img src="Images/navigation/what.png" /></div>
+			<div class="uniImportance"><img src="Images/navigation/Importance.png" /></div>
+			<div class="uniTechnical"><img src="Images/navigation/Technical.png" /></div>
+			<div class="uniGlobalization"><img src="Images/navigation/Globalization.png" /></div>
+			<div class="uniPreservation"><img src="Images/navigation/Language.png" /></div>
+			<div class="uniReferences"><img src="Images/navigation/Reference.png" /></div>
 		</div>
 
-	</section>
+		<section id="homePage" class="scrollT" data-section-name="home">
+			<h1>Unicode
+			<div class="subTitle">The Multilingual Internet</div>
+			</h1>
+			<div class="scrollDown"><div class="bounce"> <img src="Images/arrow.png" class="arrow" /></div></div>
+			<div id="transparentBG"></div>
+			<p class="credit"> Jackie Ellis, Josh Chartrand, Jasmine Chan</p>
+			<video playsinline autoplay muted loop id="bgvid">
+			    <!--<source src="Videos/UnicodeLoop.mp4" type="video/webm">-->
+			    <source src="Videos/UnicodeLoop.mp4" type="video/mp4">
+			</video>
+		</section>
 
-	<section id="uniImportance" class="scrollT" data-section-name="importance">
-		<div class="row uniContent">
-			<div class="col-md-6 uniContent no-gutter">
-				<div class="sideImage"></div>
-			</div>
-			<div class="col-md-6 uniSideText">
-				<h2>Importance of Language</h2>
+		<section id="uniWhat" class="scrollT container-fluid" data-section-name="what">
+			<div class="row uniContent">
+				<div class="col-md-6 uniSideText">
+					<h2>What is Unicode?</h2>
+					<p>Unicode is a well know character encoding standard developed by a group of companies and institutions called the <b>Unicode Consortium</b>, which consists of many big named companies like MathML, Adobe Systems Incorporated and Microsoft Corporation <span class="cite">[Pournader, 2002, pg 80]</span></p> 
+					<p>Unicode provides a unique number for every character, no matter what the platform, no matter what the program, no matter what the language</p>
+					<p>Unicode is the successor to the American Standard Code for Information Interchange (ASCII) which could only display Latin alphabet characters.</p>
+					<p class="indentText">Compared to ASCII which could only display Latin alphabet characters, Unicode can store 65,536 different characters, the first 127 characters are the same as ASCII.</p>
 
-				<h4>Translate this website:</h4>
-				<div id="google_translate_element"></div>
+					<h3> Fun Fact! </h3>
+					<p> ASCII art has become a graphic design technique. One of the main reasons ASCII art was created was because early printers lacked graphics ability and thus characters were used in place of graphic marks. </p>
 
-				<h3>Writing Systems</h3>
-				<div class="row">
-					<div class="col-md-10 offset-md-2">
-						<p>A writing system is the interpretation of verbal communication in the form of different symbols. Humans use many forms of communication but writing can store information and share it with others. <span class="cite">[Coulmas, 1989]</span></p>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1"></li>
+					    <li data-target="#myCarousel" data-slide-to="2"></li>
+					    <li data-target="#myCarousel" data-slide-to="3"></li>
+					  </ol>
 
-						<p>Writing systems can be placed in three very broad categories; alphabets, syllabaries, or logographics <span class="cite">[Taylor & Olson, 1995]</span>. Logographic systems are symbols that represent a word or phrase <span class="cite">[Tzeng & Wang, 1983]</span>. Syllabaries are systems where written symbols represent syllables <span class="cite">[Tzeng & Wang, 1983]</span>. Alphabet systems mean letters in the script correspond to a consonant or vowel segment in the spoken language <span class="cite">[Tzeng & Wang, 1983]</span>.</p>
-						<p>Unicode is an effort to try to represent all reasonable writing systems on the planet:</p>
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="Images/carousel/01.png"/>
+					    </div>
 
-						<ul>
-							<li>It presents a completely different way of thinking about characters</li>
-							<li>Unicode labels each character with a code point which is usually represented in hexadecimal</li>
-							<li>The Unicode group mapped every single character in each language to a code point</li>
-							<li>These code points must be encoded and UTF-8 became the system to store the code point from 0-127 in a single byte and the rest of the stored using 2 plus bytes</li>
-						</ul>
+					    <div class="item">
+					      <img src="Images/carousel/02.png"/>
+					    </div>
+
+					    <div class="item">
+					      <img src="Images/carousel/03.png"/>
+					    </div>
+
+					    <div class="item">
+					      <img src="Images/carousel/04.png"/>
+					    </div>
+					  </div>
+
+					  <!-- Left and right controls -->
+					  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+
+					<h3>Why?</h3>
+					<p>The main goal and interest was to develop an international text-encoder and application that can be used in all different countries and platforms. It solves the main problems that many current programs and encoders have: the fact that they are problems with recognizing the font and the use of multiple and inconsistent characters’ codes in many other languages other than English <span class="cite">[BigeLow & Holmes, 1993, pg 289]</span></p>
+					<h4>Unicode Consortium Twitter Feed</h4>
+					<a class="twitter-timeline" data-height="500px" href="https://twitter.com/unicode">Tweets by unicode</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<h3>Where is it used?</h3>
+					<p>The Unicode Standard has been adopted by such industry leaders as Apple, HP, IBM, JustSystems, Microsoft, Oracle, SAP, Sun, Sybase, Unisys and many others</p>
+					<p>It has been gaining momentum in recent years, especially in the software and computer industry <span class="cite">[Tull, 2002]</span></p>
+					<p>It is supported in many operating systems, all modern browsers, and many other products</p>
+					<p>According to Google, it was reported that only 50% of all web pages were encoded in Unicode in January 2010. Today, over 70% of the most popular websites uses Unicode <span class="cite">[John, 2013, pg 334]</span></p>
+					<div class="fullwidthImage no-gutter">
+						<h4>Adaptation of Unicode from 2001 to 2012</h4>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section id="uniTechnical" class="scrollT" data-section-name="technical">
-		<div class="row uniContent">
-			<div class="col-md-6 uniSideText">
-				<h2>Technical Considerations</h2>
-				<div class="binaryRep">
-					<div class="binaryAnim">
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					  <s></s>
-					</div>
-					<p class="indentText"> Binary counting </p>
+				<div class="col-md-6 uniContent no-gutter">
+					<div class="sideImage"></div>
 				</div>
-
-				<h3>Unicode Transformation Format</h3>
-				
-				<p>Unicode transformation format (UTF) is an algorithmic mapping from every Unicode code point (except surrogate code points) to a unique byte sequence. There are several possible representations of Unicode data, including UTF-8, UTF-16 and UTF-32. The most popular ones, however are UTF-8 and UTF-16</p>
-
-				<p>What are the main differences?</p>
-				<ul>
-					<li>UTF-8 uses a minimum of one byte (8-bits) to encode characters</li>
-					<li>It is backward-compatible with ASCII</li>
-					<li>UTF-16 uses a minimum of two bytes/16 bits</li>
-					<li>It is incompatible with ASCII</li>
-				</ul>
-
-				<div class="encodingExamples no-gutter">
-					<h4>UTF-16, UTF-8, and UCS-2 Encoding Examples</h4>
-				</div>
-				
-				<h3>UTF-8</h3>
-				<p>The main goal of UTF-8 is to encode Unicode characters in one byte. </p>
-				<p>At a high level, code points 0 to 7 are stored as regular, single byte ASCII.  Code points 80 and above are converted to binary and stored in a series of bytes. The first “count” byte indicates the number of bytes for the code point, including the count byte.</p>
-				<p>Bytes starting with 10 are data bytes and contain information on the code point. There are no null bytes and characters outside of 0-127 start with a 1 to show that they are not ASCII. </p>
-
-				<div class="codePoint no-gutter">
-					<h4>Code Point to UTF-8</h4>
-				</div>
-
-				<h3>Comparing ASCII to Unicode</h3>
-				<p>The trouble with ASCII only using 7-bits (other than only representing English characters) meant people decided to use the 1-bit of extra space in whatever way they pleased. This lead to so many different codes being developed for different countries.</p>
-				<p>An example of different codes would be the computer. A letter on one computer could be a completely different letter on another computer. On some PC they could have the letter é, but on other computers sold in Israel it would be the Hebrew letter Gimel. </p>
-				<p>So, if someone from America send their résumés to Israel they would arrive as rsums <span class="cite">[Nelson & Gailly, 1996]</span>.</p> 
-				<p>The result of viewing text in one encoding using the display system of another encoding is called mojibake, a Japanese term meaning “character-mutation” <span class="cite">[Crippen, 2010, p6]</span>. Mojibake can be compared to words and phrases that are “lost in translation” in verbal language.</p>
-				<video playsinline autoplay muted loop id="sidevid">
-				    <source src="Videos/asciiArt.mp4" type="video/mp4">
-				</video>
-				<p class="indentText"> ASCII Art & Unicode in Monodraw</p>
 			</div>
-			<div class="col-md-6 uniContent no-gutter">
-				<div class="sideImage"></div>
-			</div>
-		</div>
-	</section>
-	<section id="uniGlobalization" class="scrollT" data-section-name="globalization">
+
+		</section>
+
+		<section id="uniImportance" class="scrollT" data-section-name="importance">
 			<div class="row uniContent">
 				<div class="col-md-6 uniContent no-gutter">
 					<div class="sideImage"></div>
 				</div>
 				<div class="col-md-6 uniSideText">
+					<h2>Importance of Language</h2>
+
+					<h4>Translate this website:</h4>
+					<div id="google_translate_element"></div>
+
+					<h3>Writing Systems</h3>
 					<div class="row">
-						<div class="col-md-10 no-gutter">
-							<h2>Professional Globalization</h2>
-							<p>Markets are sprouting across the globe, taking advantage of the “global market” and sell their products and software to other companies across the world <span class="cite">[Gross 2006]</span></p>
-							<h3>Localization</h3>
-								<p>Software has to be developed or modified to be translated easily into several different languages.</p>
-								<p>The goal of this internationalization is to get a software which does not contain any language- or culture-dependent information. Also it should work in every region of the world in a way the users want.</p>
-							<p>Some components of Internationalization include:</p>
+						<div class="col-md-10 offset-md-2">
+							<p>A writing system is the interpretation of verbal communication in the form of different symbols. Humans use many forms of communication but writing can store information and share it with others. <span class="cite">[Coulmas, 1989]</span></p>
+
+							<p>Writing systems can be placed in three very broad categories; alphabets, syllabaries, or logographics <span class="cite">[Taylor & Olson, 1995]</span>. Logographic systems are symbols that represent a word or phrase <span class="cite">[Tzeng & Wang, 1983]</span>. Syllabaries are systems where written symbols represent syllables <span class="cite">[Tzeng & Wang, 1983]</span>. Alphabet systems mean letters in the script correspond to a consonant or vowel segment in the spoken language <span class="cite">[Tzeng & Wang, 1983]</span>.</p>
+							<p>Unicode is an effort to try to represent all reasonable writing systems on the planet:</p>
+
 							<ul>
-								<li>User Interfaces and printed documents</li>
-								<li>Character classification</li>
-								<li>Character transliteration</li>
-									<div class="translit"></div>
-									<p class="indentText"> Examples of transliteration </p>
-								<li>Numerical/Monetary formats</li>
-								<li>Date/time formats</li>
-									<div class="dates"></div>
-									<p class="indentText"> German versus English date/time formats </p>			
-								<li>Collating or sorting</li>
-								<li>Regular expressions</li>
-								<li>Encoding schemes</li>
-								<li>Characters vs byte processing</li>
-								<li>Text directionality</li>
-									<div class="col-md-4 direction1"></div><div class="col-md-4 direction2"></div><div class="col-md-4 direction3"></div>
-									<p class="indentText"> Text directionality of various writing systems </p>		
-								<li>Input method editors</li>
+								<li>It presents a completely different way of thinking about characters</li>
+								<li>Unicode labels each character with a code point which is usually represented in hexadecimal</li>
+								<li>The Unicode group mapped every single character in each language to a code point</li>
+								<li>These code points must be encoded and UTF-8 became the system to store the code point from 0-127 in a single byte and the rest of the stored using 2 plus bytes</li>
 							</ul>
-							<h3>Internationalization</h3>
-							<p>Software must be adjusted to the respective target market</p>	
 						</div>
-					</div>	
+					</div>
 				</div>
 			</div>
-	</section>
-	<section id="uniPreservation" class="scrollT" data-section-name="preservation">
-		<div class="row uniContent">
-			<div class="col-md-6 uniSideText">
-				<h2>Language Preservation</h2>
-				<p>The translations of texts and articles in library systems. Users are not only able to use their native language to search for information without having to guess at how they might have been transliterated into Latin text, but they can also search through for information from articles of a different language. This is especially useful when trying to display a record that could contain multiple different translations versions <span class="cite">[Tull, 2002, pg 181]</span></p>
-				<p>Unicode can also help collect and store a multitude of different languages, preserving it for years to come. India is a country rich in languages, cultures, customs and religions. The records kept by these cultures contain 3,000 years of Indian history, and it is up to museums and libraries to properly document and preserve them.</p>
-				<p>Many websites at the early stages of the new internet tend to only create it for their native language. With the internet now becoming the go to choose for research and information, many people are paying more and more attention to internationalization <span class="cite">[King, 2012, pg 60]</span>. Needing to have websites that can be accessible to everyone no matter their language (ie. Government websites or Hospitals) is crucial for getting the correct information to the user with no errors at all.</p>
-			</div>
-			<div class="col-md-6 uniContent no-gutter">
-				<div class="sideImage"></div>
-			</div>
-		</div>
-	</section>
-	<section id="uniReferences" class="scrollT" data-section-name="references">
-		<div class="uniSideText">
-			<h2>References</h2>
+		</section>
+		<section id="uniTechnical" class="scrollT" data-section-name="technical">
+			<div class="row uniContent">
+				<div class="col-md-6 uniSideText">
+					<h2>Technical Considerations</h2>
+					<div class="binaryRep">
+						<div class="binaryAnim">
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						  <s></s>
+						</div>
+						<p class="indentText"> Binary counting </p>
+					</div>
 
-			<ul>
-				<li>BigeLow, C., & Holmes, K. (1993). The design of a Unicode font. Electronic Publishing. 3rd ed., Vol. 6, 289-305 </li>
-				<li>Pournader, R. (2002). Catching up to Unicode (1st ed., Vol. 23, 80-85). TUGboat</li>
-				<li>John, N. (2013). The Construction of the Multilingual Internet: Unicode, Hebrew, and Globalization. Journal Of Computer-Mediated Communication, 18(3), 321-338. doi: 10.1111/jcc4.12015</li>
-				<li>Gross, S. (2006). Internationalization and localization of software (Doctoral dissertation, Eastern Michigan University). Available at: https://pdfs.semanticscholar.org/bfee/27a83f63ba52a3977522bf64988b0a4b2938.pdf</li>
-				<li>Coulmas, F. (1989). The writing systems of the world. B. Blackwell.</li>
-				<li>Taylor, I., & Olson, D. R. (1995). Scripts and literacy: Reading and learning to read alphabets, syllabaries, and characters (Vol. 7). Springer Science & Business Media</li>
-				<li>Tzeng, O. J., & Wang, W. S. Y. (1983). The first two R's: The way different languages reduce speech to script affects how visual information is processed in the brain. American Scientist, 71(3), 238-243</li>
-				<li>Nelson, M., & Gailly, J. L. (1996). The data compression book (Vol. 2). New York: M&t Books</li>
-				<li>Crippen, J. (2010). Bits, bytes, and unicode: An introduction to digital text for linguist s</li>
-				<li>Tull, L. (2002). Library systems and Unicode: a review of the current state of development. Information technology and libraries, 21(4), 181.</li>
-				<li>King, R. S. (2012). Will unicode soon be the universal code? [The Data]. IEEE Spectrum. 49(7), 60-60. doi: 10.1109/MSPEC.2012.6221090</li>
-			</ul>
-		</div>
-	</section>
+					<h3>Unicode Transformation Format</h3>
+					
+					<p>Unicode transformation format (UTF) is an algorithmic mapping from every Unicode code point (except surrogate code points) to a unique byte sequence. There are several possible representations of Unicode data, including UTF-8, UTF-16 and UTF-32. The most popular ones, however are UTF-8 and UTF-16</p>
+
+					<p>What are the main differences?</p>
+					<ul>
+						<li>UTF-8 uses a minimum of one byte (8-bits) to encode characters</li>
+						<li>It is backward-compatible with ASCII</li>
+						<li>UTF-16 uses a minimum of two bytes/16 bits</li>
+						<li>It is incompatible with ASCII</li>
+					</ul>
+
+					<div class="encodingExamples no-gutter">
+						<h4>UTF-16, UTF-8, and UCS-2 Encoding Examples</h4>
+					</div>
+					
+					<h3>UTF-8</h3>
+					<p>The main goal of UTF-8 is to encode Unicode characters in one byte. </p>
+					<p>At a high level, code points 0 to 7 are stored as regular, single byte ASCII.  Code points 80 and above are converted to binary and stored in a series of bytes. The first “count” byte indicates the number of bytes for the code point, including the count byte.</p>
+					<p>Bytes starting with 10 are data bytes and contain information on the code point. There are no null bytes and characters outside of 0-127 start with a 1 to show that they are not ASCII. </p>
+
+					<div class="codePoint no-gutter">
+						<h4>Code Point to UTF-8</h4>
+					</div>
+
+					<h3>Comparing ASCII to Unicode</h3>
+					<p>The trouble with ASCII only using 7-bits (other than only representing English characters) meant people decided to use the 1-bit of extra space in whatever way they pleased. This lead to so many different codes being developed for different countries.</p>
+					<p>An example of different codes would be the computer. A letter on one computer could be a completely different letter on another computer. On some PC they could have the letter é, but on other computers sold in Israel it would be the Hebrew letter Gimel. </p>
+					<p>So, if someone from America send their résumés to Israel they would arrive as rsums <span class="cite">[Nelson & Gailly, 1996]</span>.</p> 
+					<p>The result of viewing text in one encoding using the display system of another encoding is called mojibake, a Japanese term meaning “character-mutation” <span class="cite">[Crippen, 2010, p6]</span>. Mojibake can be compared to words and phrases that are “lost in translation” in verbal language.</p>
+					<video playsinline autoplay muted loop id="sidevid">
+					    <source src="Videos/asciiArt.mp4" type="video/mp4">
+					</video>
+					<p class="indentText"> ASCII Art & Unicode in Monodraw</p>
+				</div>
+				<div class="col-md-6 uniContent no-gutter">
+					<div class="sideImage"></div>
+				</div>
+			</div>
+		</section>
+		<section id="uniGlobalization" class="scrollT" data-section-name="globalization">
+				<div class="row uniContent">
+					<div class="col-md-6 uniContent no-gutter">
+						<div class="sideImage"></div>
+					</div>
+					<div class="col-md-6 uniSideText">
+						<div class="row">
+							<div class="col-md-10 no-gutter">
+								<h2>Professional Globalization</h2>
+								<p>Markets are sprouting across the globe, taking advantage of the “global market” and sell their products and software to other companies across the world <span class="cite">[Gross 2006]</span></p>
+								<h3>Localization</h3>
+									<p>Software has to be developed or modified to be translated easily into several different languages.</p>
+									<p>The goal of this internationalization is to get a software which does not contain any language- or culture-dependent information. Also it should work in every region of the world in a way the users want.</p>
+								<p>Some components of Internationalization include:</p>
+								<ul>
+									<li>User Interfaces and printed documents</li>
+									<li>Character classification</li>
+									<li>Character transliteration</li>
+										<div class="translit"></div>
+										<p class="indentText"> Examples of transliteration </p>
+									<li>Numerical/Monetary formats</li>
+									<li>Date/time formats</li>
+										<div class="dates"></div>
+										<p class="indentText"> German versus English date/time formats </p>			
+									<li>Collating or sorting</li>
+									<li>Regular expressions</li>
+									<li>Encoding schemes</li>
+									<li>Characters vs byte processing</li>
+									<li>Text directionality</li>
+										<div class="col-md-4 direction1"></div><div class="col-md-4 direction2"></div><div class="col-md-4 direction3"></div>
+										<p class="indentText"> Text directionality of various writing systems </p>		
+									<li>Input method editors</li>
+								</ul>
+								<h3>Internationalization</h3>
+								<p>Software must be adjusted to the respective target market</p>	
+							</div>
+						</div>	
+					</div>
+				</div>
+		</section>
+		<section id="uniPreservation" class="scrollT" data-section-name="preservation">
+			<div class="row uniContent">
+				<div class="col-md-6 uniSideText">
+					<h2>Language Preservation</h2>
+					<p>The translations of texts and articles in library systems. Users are not only able to use their native language to search for information without having to guess at how they might have been transliterated into Latin text, but they can also search through for information from articles of a different language. This is especially useful when trying to display a record that could contain multiple different translations versions <span class="cite">[Tull, 2002, pg 181]</span></p>
+					<p>Unicode can also help collect and store a multitude of different languages, preserving it for years to come. India is a country rich in languages, cultures, customs and religions. The records kept by these cultures contain 3,000 years of Indian history, and it is up to museums and libraries to properly document and preserve them.</p>
+					<p>Many websites at the early stages of the new internet tend to only create it for their native language. With the internet now becoming the go to choose for research and information, many people are paying more and more attention to internationalization <span class="cite">[King, 2012, pg 60]</span>. Needing to have websites that can be accessible to everyone no matter their language (ie. Government websites or Hospitals) is crucial for getting the correct information to the user with no errors at all.</p>
+				</div>
+				<div class="col-md-6 uniContent no-gutter">
+					<div class="sideImage"></div>
+				</div>
+			</div>
+		</section>
+		<section id="uniReferences" class="scrollT" data-section-name="references">
+			<div class="uniSideText">
+				<h2>References</h2>
+
+				<ul>
+					<li>BigeLow, C., & Holmes, K. (1993). The design of a Unicode font. Electronic Publishing. 3rd ed., Vol. 6, 289-305 </li>
+					<li>Pournader, R. (2002). Catching up to Unicode (1st ed., Vol. 23, 80-85). TUGboat</li>
+					<li>John, N. (2013). The Construction of the Multilingual Internet: Unicode, Hebrew, and Globalization. Journal Of Computer-Mediated Communication, 18(3), 321-338. doi: 10.1111/jcc4.12015</li>
+					<li>Gross, S. (2006). Internationalization and localization of software (Doctoral dissertation, Eastern Michigan University). Available at: https://pdfs.semanticscholar.org/bfee/27a83f63ba52a3977522bf64988b0a4b2938.pdf</li>
+					<li>Coulmas, F. (1989). The writing systems of the world. B. Blackwell.</li>
+					<li>Taylor, I., & Olson, D. R. (1995). Scripts and literacy: Reading and learning to read alphabets, syllabaries, and characters (Vol. 7). Springer Science & Business Media</li>
+					<li>Tzeng, O. J., & Wang, W. S. Y. (1983). The first two R's: The way different languages reduce speech to script affects how visual information is processed in the brain. American Scientist, 71(3), 238-243</li>
+					<li>Nelson, M., & Gailly, J. L. (1996). The data compression book (Vol. 2). New York: M&t Books</li>
+					<li>Crippen, J. (2010). Bits, bytes, and unicode: An introduction to digital text for linguist s</li>
+					<li>Tull, L. (2002). Library systems and Unicode: a review of the current state of development. Information technology and libraries, 21(4), 181.</li>
+					<li>King, R. S. (2012). Will unicode soon be the universal code? [The Data]. IEEE Spectrum. 49(7), 60-60. doi: 10.1109/MSPEC.2012.6221090</li>
+				</ul>
+			</div>
+		</section>
+	</span>
 
 </body>
 </html>
