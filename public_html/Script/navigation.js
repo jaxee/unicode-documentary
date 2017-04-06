@@ -31,10 +31,10 @@ $( document ).ready(function() {
         $.scrollify.move("#references");
     });
 
-    $(function backToTop() {
-        $('.navigation').css("display", "none");
-        window.location.replace("http://localhost:4002/#home");
-    });
+    // $(function backToTop() {
+    //     $('.navigation').css("display", "none");
+    //     window.location.replace("http://localhost:4002/#home");
+    // });
 
     $(function() {
         $.scrollify({
@@ -50,6 +50,8 @@ $( document ).ready(function() {
                 } else {
                     $('.navigation').fadeIn(500);
                 }
+
+
             }
         });
         function changeNav(scrolledID){

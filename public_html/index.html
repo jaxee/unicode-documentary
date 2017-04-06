@@ -11,6 +11,7 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {  
 			$(window).load(function(){
+				$.scrollify.move("#home");
 				$('#preloader').fadeOut('slow',function(){$(this).remove();});
 			});
 		});
@@ -32,7 +33,7 @@
     <script src="Script/navigation.js"></script>
     <script src="Script/references.js"></script>
 </head>
-<body onunload="refresh()">
+<body>
 	<div id="preloader"></div>
 
 	<div id="screenWarning">
