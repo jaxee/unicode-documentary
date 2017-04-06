@@ -252,6 +252,16 @@ section {
     background-repeat: no-repeat;
     height: 100%;
   }
+
+    video#sidevid {
+    margin-top: 25px;
+    height: 400px;
+    background: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
 }
 
 #uniGlobalization {
